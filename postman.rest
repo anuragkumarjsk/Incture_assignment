@@ -1,0 +1,23 @@
+get http://localhost:4000/api/test
+
+###
+GET  http://localhost:4000/api/show
+###
+POST http://localhost:4000/api/add
+Content-Type: application/json; charset=utf-8
+
+{     
+      "name":"akhil",
+      "leave_type":"earned leave",
+      "start":null,
+      "end":null, 
+      "days":11,
+      "remaining_days":110,
+      "remarks":"PROJECT DEPENDENCIES MENTIONED TO TEAM MATES"
+}
+
+###
+DELETE   http://localhost:4000/api/delete/Rasputin
+
+###
+GET  http://localhost:4000/api/find/kirti

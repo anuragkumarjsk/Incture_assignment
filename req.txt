@@ -1,0 +1,10 @@
+1. To select the leave type
+2. To define the Leave period (Date range selection)
+3. To display the booked dates count
+4. To display the available leave balance count
+5. To add remarks
+6. Submission
+
+http://localhost:3000/
+
+    "cors": "^2.8.5"
