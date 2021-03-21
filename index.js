@@ -25,4 +25,10 @@ mongoose.connect(conn_url,conn_params )
 const router = require('./router')
 app.use('/api',router)
 
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.listen(port,() => {console.log('server started at',port)})
