@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 const mongoose= require('mongoose')
-const conn_url ='mongodb+srv://Naruto:Kurama@mernstack.mzdeg.mongodb.net/Attendance?retryWrites=true&w=majority'
+const conn_url = process.env.REACT_APP_conn_url
 const conn_params={
 
     useCreateIndex:true,
